@@ -23,10 +23,8 @@ int majority(int arr[], int n){
             printf("the number is %d\n",arr[res]);
             return count;
         }
-        else{
-            printf("no majority");
-        }
     }
+    printf("No majority");
 }
 int main(){
     int arr[]={8,3,4,8,8};
