@@ -2,10 +2,10 @@
 int fibon(int n, int prev1, int prev2);
 int fibon(int n, int prev1, int prev2){
     if(n<3){
-        return;
+        return 0;
     }
     int curr = prev1+prev2;
-    printf("%d",curr);
+    printf("%d ",curr);
     fibon(n-1,prev2,curr);
 }
 
@@ -19,6 +19,7 @@ int main(){
         printf("%d %d",0,1);
     }
     else{
+        printf("0 1 ");
         fibon(n,0,1);
     }
 
